@@ -46,11 +46,19 @@ call vundle#begin()
 " " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-surround'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'rdnetto/YCM-Generator'
+Plugin 'tpope/vim-surround'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'godlygeek/tabular'
+Plugin 'mattn/emmet-vim'
+Plugin 'tpope/vim-repeat'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Raimondi/delimitMate'
 call vundle#end()  
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
