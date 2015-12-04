@@ -59,6 +59,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-repeat'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Raimondi/delimitMate'
+Plugin 'sjl/gundo.vim.git'
 call vundle#end()  
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -444,3 +445,6 @@ let g:ctrlp_working_path_mode = 'ra'
 
 "Settings for YouCompleteMe
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
+
+"settings for gundo
+nnoremap <F5> :GundoToggle<CR>
