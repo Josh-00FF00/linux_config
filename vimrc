@@ -60,6 +60,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Raimondi/delimitMate'
 Plugin 'sjl/gundo.vim.git'
+Plugin 'bufexplorer.zip'
 call vundle#end()  
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
