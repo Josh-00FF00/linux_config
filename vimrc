@@ -64,6 +64,8 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'Yggdroot/indentLine'
 Plugin 'SirVer/ultisnips'
 Plugin 'scrooloose/nerdtree'
+Plugin 'eagletmt/ghcmod-vim'
+Plugin 'Shougo/vimproc.vim'
 call vundle#end()  
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -470,9 +472,10 @@ map <Leader>k <Plug>(easymotion-k)
 
 
 "haskell commands
-au FileType haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
-au FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
-au FileType haskell nnoremap <buffer> <silent> <F3> :HdevtoolsInfo<CR>
+map <silent> <leader>tw :GhcModTypeInsert<CR>
+map <silent> <leader>ts :GhcModSplitFunCase<CR>
+map <silent> <leader>tq :GhcModType<CR>
+map <silent> <leader>te :GhcModTypeClear<CR>
 
 "nerdtree
 map <Leader>n :NERDTreeToggle<CR>
