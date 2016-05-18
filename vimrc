@@ -66,6 +66,8 @@ Plugin 'SirVer/ultisnips'
 Plugin 'scrooloose/nerdtree'
 Plugin 'eagletmt/ghcmod-vim'
 Plugin 'Shougo/vimproc.vim'
+Plugin 'wellle/targets.vim'
+Plugin 'michaeljsmith/vim-indent-object'
 call vundle#end()  
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -87,7 +89,11 @@ let mapleader = ","
 let g:mapleader = ","
 
 " Fast saving
-nmap <leader>w :w!<cr>
+nmap <leader>ws :w!<cr>
+
+
+nnoremap H ^
+nnoremap L $
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -470,6 +476,15 @@ let g:EasyMotion_smartcase = 1
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
+map <Leader>L <Plug>(easymotion-bd-jk)
+nmap <Leader>L <Plug>(easymotion-overwin-line)
+
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+map <Leader>f <Plug>(easymotion-sl)
+nmap <Leader>f <Plug>(easymotion-sl)
+
 
 "haskell commands
 map <silent> <leader>tw :GhcModTypeInsert<CR>
@@ -479,3 +494,6 @@ map <silent> <leader>te :GhcModTypeClear<CR>
 
 "nerdtree
 map <Leader>n :NERDTreeToggle<CR>
+
+"guifont
+set guifont=DejaVu\Sans\Mono\ 12 
