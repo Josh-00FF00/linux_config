@@ -64,11 +64,12 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'Yggdroot/indentLine'
 Plugin 'SirVer/ultisnips'
 Plugin 'scrooloose/nerdtree'
-Plugin 'eagletmt/ghcmod-vim'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'wellle/targets.vim'
 Plugin 'michaeljsmith/vim-indent-object'
-call vundle#end()  
+Plugin 'mxw/vim-jsx'
+Plugin 'bronson/vim-trailing-whitespace'
+call vundle#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -442,6 +443,8 @@ set t_Co=16
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+let g:syntastic_javascript_checkers = ['eslint']
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files"
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -496,4 +499,7 @@ map <silent> <leader>te :GhcModTypeClear<CR>
 map <Leader>n :NERDTreeToggle<CR>
 
 "guifont
-set guifont=DejaVu\Sans\Mono\ 12 
+set guifont=DejaVu\Sans\Mono\ 13 
+
+"Makrdown leader shortcut
+map <leader>md :MDP<CR>.
